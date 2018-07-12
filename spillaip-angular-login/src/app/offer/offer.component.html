@@ -1,0 +1,11 @@
+<div class="card" *ngFor="let offer of offers">
+	<div class="card-body text-center">
+		<h5 class="card-title">{{offer.profile}}</h5>
+		<p class="card-text">{{offer.profile}} is available for {{offer.offer}} at {{offer.location}}</p>
+		<a href="#" class="btn btn-primary">Connect</a>
+	</div>
+</div>
+<br>
+<div *ngIf="offers.length==0">
+	<p>No Data To Display</p>
+</div>
