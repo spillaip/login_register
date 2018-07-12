@@ -1,0 +1,60 @@
+<div class="jumbotron">
+	<h1 class="display-4">Simple. Elegant. Awesome</h1>
+	<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+		dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+		book.
+	</p>
+	<p class="lead">
+		<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+	</p>
+</div>
+<div class="row">
+	<div class="col-sm12 col-md-4">
+		<div class="card">
+			<div class="card-body text-center">
+				<h5 class="card-title">Card Title</h5>
+				<p class="card-text">Some quick text to build up on the card title</p>
+				<p href="#" class="card-link">More</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="card">
+			<div class="card-body text-center">
+				<h5 class="card-title">Card Title</h5>
+				<p class="card-text">Some quick text to build up on the card title</p>
+				<p href="#" class="card-link">More</p>
+			</div>
+		</div>
+	</div>
+	<div class="col">
+		<div class="card">
+			<div class="card-body text-center">
+				<h5 class="card-title">Card Title</h5>
+				<p class="card-text">Some quick text to build up on the card title</p>
+				<p href="#" class="card-link">More</p>
+			</div>
+		</div>
+	</div>
+</div>
+<h1>Hi {{currentUser.firstName}}!</h1>
+<p>You're logged in with Angular 6!!</p>
+<div class="card" style="width: 18rem;">
+	<img class="card-img-top" src=".../100px180/" alt="Card image cap">
+	<div class="card-body">
+		<h5 class="card-title">Card title</h5>
+		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		<a href="#" class="btn btn-primary">Go somewhere</a>
+	</div>
+</div>
+<h3>All registered users:</h3>
+<ul>
+	<li *ngFor="let user of users">
+		{{user.username}} ({{user.firstName}} {{user.lastName}}) -
+		<a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+	</li>
+</ul>
+<p>
+	<a [routerLink]="['/login']">Logout</a>
+</p>
